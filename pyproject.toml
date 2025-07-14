@@ -17,6 +17,11 @@ dependencies = [
     "sqlmodel>=0.0.24",
 ]
 
+
+[project.scripts]
+start-logger = "iseg_monitor.logger.main:main"
+db-check = "iseg_monitor.util.datachecker:main"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
