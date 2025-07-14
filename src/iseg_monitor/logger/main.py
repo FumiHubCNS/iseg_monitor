@@ -7,8 +7,9 @@ import requests
 import json
 from dotenv import load_dotenv
 from sqlmodel import Field, Session, SQLModel, create_engine
+
 sys.path.append("../models")
-from models import Detector, Voltage, Current
+from iseg_monitor.models.models import Detector, Voltage, Current, TimeValSet
 
 def main():
     # Load config

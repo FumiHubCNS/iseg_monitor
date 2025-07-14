@@ -6,10 +6,12 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 from typing import List
+
 sys.path.append("../models")
-from models import Detector, Voltage, Current, TimeValSet
+from iseg_monitor.models.models import Detector, Voltage, Current, TimeValSet
 
 DOTENV_FILE = pathlib.Path(__file__).resolve().parent.parent.joinpath("conf/.env").resolve()
+print(DOTENV_FILE)
 load_dotenv(DOTENV_FILE)
 
 dbpath = os.environ.get("DBPATH")

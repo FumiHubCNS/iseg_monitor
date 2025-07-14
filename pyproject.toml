@@ -1,19 +1,22 @@
-[tool.poetry]
-name = "iseg_monitor"
+[project]
+name = "iseg-monitor"
 version = "0.1.0"
-description = ""
-authors = ["Takayuki <yano.takayuki.55w@st.kyoto-u.ac.jp>"]
-license = "MIT"
+description = "Add your description here"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-requests = "^2.32.3"
-sqlmodel = "^0.0.22"
-fastapi = {extras = ["standard"], version = "^0.115.4"}
-python-dotenv = "^1.0.1"
-
+authors = [
+    { name = "FumiHubCNS", email = "fendo@cns.s.u-tokyo.ac.jp" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.116.1",
+    "pandas>=2.3.1",
+    "plotly>=6.2.0",
+    "pydantic>=2.11.7",
+    "requests>=2.32.4",
+    "sqlmodel>=0.0.24",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

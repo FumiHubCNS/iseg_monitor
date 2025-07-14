@@ -1,0 +1,7 @@
+[
+    {"id":[0, 2, 0], "name": "tpc cathode"},
+    {"id":[0, 2, 1], "name": "tpc gem1 top-a-pr"},
+    {"id":[0, 2, 2], "name": "tpc gem1 bottom"},
+    {"id":[0, 2, 3], "name": "tpc gem2 top"},
+    {"id":[0, 2, 4], "name": "tpc gem2 bottom"}
+]
